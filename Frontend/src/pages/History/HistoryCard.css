@@ -1,0 +1,75 @@
+.history-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin-top: 50px;
+
+    .project-info {
+        padding-top: 40px;
+        padding-bottom: 5px;
+        padding-inline: 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .project-title {
+        font-weight: 500;
+        font-size: 1.5em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: rgb(255, 255, 255);
+    }
+
+    .lighter {
+        font-size: 0.9em;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tag {
+        font-weight: lighter;
+        color: grey;
+    }
+
+    /*IF USING IMAGES*/
+
+    .card {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        width: 100%;
+        max-height: 330px;
+        border-radius: 8px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .card-img {
+        position: relative;
+        top: -20px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Change the .card-img div to .card-img img to use img*/
+    .card-img a,
+    .card-img img {
+        height: 200px;
+        width: 90%;
+        /* Change this width here to change the width of the color/image */
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .card-imgs {
+        transition: all 0.5s;
+    }
+
+}
